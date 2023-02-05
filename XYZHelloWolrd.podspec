@@ -8,26 +8,42 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "XYZHelloWorld"
-  spec.version      = "1.0.0"
-  spec.summary      = "A short description of XYZHelloWorld."
-  spec.description  = "A complete description of XYZHelloWorld"
+  spec.name               = "XYZHelloWorld"
+  spec.version            = "1.0.0"
+  spec.summary            = "Star Wars Library for iOS apps"
+  spec.description        = "..."
+  spec.homepage           = "..."
+  spec.documentation_url  = "..."
+  spec.license            = { :type => "MIT" }
+  # spec.author             = { "Star Wars" => "..." }
+  spec.author            = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
+  spec.source             = { :git => 'https://github.com/skrdaz/sdk-hello-world-ios.git', :tag => "#{spec.version}" }
+  spec.swift_version      = "5.3"
 
-  spec.platform     = :ios, "12.0"
+  # Supported deployment targets
+  spec.ios.deployment_target  = "10.0"
 
-  spec.homepage     = "http://EXAMPLE/XYZHelloWorld"
-  spec.license      = "MIT"
-  spec.author       = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
-  #spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/skrdaz/sdk-hello-world-ios.git", :tag => "1.0.0" }
-  #spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :commit => "2c360b814bfb2c6aa233e72df892c71c84412b22" }
-  spec.ios.vendored_frameworks = 'XYZHelloWorld.xcframework'
+  # Published binaries
+  vendored_frameworks = "XYZHelloWorld.xcframework"
+
+  # spec.name         = "XYZHelloWorld"
+  # spec.version      = "1.0.0"
+  # spec.summary      = "A short description of XYZHelloWorld."
+  # spec.description  = "A complete description of XYZHelloWorld"
+
+  # spec.platform     = :ios, "12.0"
+
+  # spec.homepage     = "http://EXAMPLE/XYZHelloWorld"
+  # spec.license      = "MIT"
+  # spec.author       = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
+  # spec.source       = { :git => "https://github.com/skrdaz/sdk-hello-world-ios.git", :tag => "1.0.0" }
+  # spec.ios.vendored_frameworks = 'XYZHelloWorld.xcframework'
 
   
   # spec.source_files  = "XYZHelloWorld"
   # spec.exclude_files = "Classes/Exclude"
-  spec.swift_version = "5.0" 
-  spec.dependency 'Alamofire'
+  # spec.swift_version = "5.0" 
+  # spec.dependency 'Alamofire'
   # spec.dependency = 'Alamofire', '5.0.0-beta.3'
   # spec.dependency 'Alamofire', "= 5.0.0-beta.3"
   # pec.dependency 'Alamofire', '5.0.0-beta.3'
