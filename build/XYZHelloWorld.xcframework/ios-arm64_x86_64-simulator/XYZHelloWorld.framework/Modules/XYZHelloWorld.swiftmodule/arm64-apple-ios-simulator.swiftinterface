@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name XYZHelloWorld
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name XYZHelloWorld
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Alamofire
 import Foundation
@@ -8,3 +8,11 @@ import Swift
 @_exported import XYZHelloWorld
 import _Concurrency
 import _StringProcessing
+@_hasMissingDesignatedInitializers public class SpeakUp {
+  public func sayHello() -> Swift.String
+  public func callApi(url: Swift.String, param: [Swift.String : Swift.String])
+  @objc deinit
+}
+public protocol SpeakUpListener {
+  func onResponse(_ responseStr: Swift.String)
+}

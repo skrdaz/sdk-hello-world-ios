@@ -20,6 +20,129 @@
         "printedName": "Alamofire",
         "declKind": "Import",
         "moduleName": "XYZHelloWorld"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SpeakUp",
+        "printedName": "SpeakUp",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sayHello",
+            "printedName": "sayHello()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13XYZHelloWorld7SpeakUpC8sayHelloSSyF",
+            "mangledName": "$s13XYZHelloWorld7SpeakUpC8sayHelloSSyF",
+            "moduleName": "XYZHelloWorld",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callApi",
+            "printedName": "callApi(url:param:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13XYZHelloWorld7SpeakUpC7callApi3url5paramySS_SDyS2SGtF",
+            "mangledName": "$s13XYZHelloWorld7SpeakUpC7callApi3url5paramySS_SDyS2SGtF",
+            "moduleName": "XYZHelloWorld",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13XYZHelloWorld7SpeakUpC",
+        "mangledName": "$s13XYZHelloWorld7SpeakUpC",
+        "moduleName": "XYZHelloWorld",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SpeakUpListener",
+        "printedName": "SpeakUpListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onResponse",
+            "printedName": "onResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13XYZHelloWorld15SpeakUpListenerP10onResponseyySSF",
+            "mangledName": "$s13XYZHelloWorld15SpeakUpListenerP10onResponseyySSF",
+            "moduleName": "XYZHelloWorld",
+            "genericSig": "<τ_0_0 where τ_0_0 : XYZHelloWorld.SpeakUpListener>",
+            "sugared_genericSig": "<Self where Self : XYZHelloWorld.SpeakUpListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13XYZHelloWorld15SpeakUpListenerP",
+        "mangledName": "$s13XYZHelloWorld15SpeakUpListenerP",
+        "moduleName": "XYZHelloWorld",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8
