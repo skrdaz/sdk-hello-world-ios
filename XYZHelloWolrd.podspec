@@ -17,17 +17,18 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "http://EXAMPLE/XYZHelloWorld"
   spec.license      = "MIT"
-  spec.author       = { "Ali Akhtar" => "aliakhtarcs11020@gmail.com" }
+  spec.author       = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
   #spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/aliakhtar49/XYZHelloWorld.git", :tag => "1.0.6" }
+  spec.source       = { :git => "https://github.com/skrdaz/sdk-hello-world-ios.git", :tag => "1.0.0" }
   #spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :commit => "2c360b814bfb2c6aa233e72df892c71c84412b22" }
+  spec.ios.vendored_frameworks = 'XYZHelloWorld.xcframework'
 
   
-  spec.source_files  = "XYZHelloWorld"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.source_files  = "XYZHelloWorld"
+  # spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0" 
-  #spec.dependency = 'Alamofire', '5.0.0-beta.3'
-  #spec.dependency 'Alamofire', "= 5.0.0-beta.3"
   spec.dependency 'Alamofire'
-  #pec.dependency 'Alamofire', '5.0.0-beta.3'
+  # spec.dependency = 'Alamofire', '5.0.0-beta.3'
+  # spec.dependency 'Alamofire', "= 5.0.0-beta.3"
+  # pec.dependency 'Alamofire', '5.0.0-beta.3'
 end

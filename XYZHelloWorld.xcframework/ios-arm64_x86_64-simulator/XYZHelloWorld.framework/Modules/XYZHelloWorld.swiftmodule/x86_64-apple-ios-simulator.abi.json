@@ -1,0 +1,28 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "XYZHelloWorld",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "XYZHelloWorld"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
