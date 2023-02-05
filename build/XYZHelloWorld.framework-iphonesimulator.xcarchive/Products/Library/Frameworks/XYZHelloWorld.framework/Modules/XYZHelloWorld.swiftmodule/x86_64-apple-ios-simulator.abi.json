@@ -27,6 +27,27 @@
         "printedName": "SpeakUp",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpeakUp",
+                "printedName": "XYZHelloWorld.SpeakUp",
+                "usr": "s:13XYZHelloWorld7SpeakUpC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13XYZHelloWorld7SpeakUpCACycfc",
+            "mangledName": "$s13XYZHelloWorld7SpeakUpCACycfc",
+            "moduleName": "XYZHelloWorld",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "sayHello",
             "printedName": "sayHello()",
@@ -100,8 +121,7 @@
         "moduleName": "XYZHelloWorld",
         "declAttributes": [
           "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
+        ]
       },
       {
         "kind": "TypeDecl",

@@ -8,7 +8,8 @@ import Swift
 @_exported import XYZHelloWorld
 import _Concurrency
 import _StringProcessing
-@_hasMissingDesignatedInitializers public class SpeakUp {
+public class SpeakUp {
+  public init()
   public func sayHello() -> Swift.String
   public func callApi(url: Swift.String, param: [Swift.String : Swift.String])
   @objc deinit
