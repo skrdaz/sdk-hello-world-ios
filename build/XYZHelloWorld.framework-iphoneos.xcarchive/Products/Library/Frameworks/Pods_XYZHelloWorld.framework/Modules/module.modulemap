@@ -1,0 +1,6 @@
+framework module Pods_XYZHelloWorld {
+  umbrella header "Pods-XYZHelloWorld-umbrella.h"
+
+  export *
+  module * { export * }
+}

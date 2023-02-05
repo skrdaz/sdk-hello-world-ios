@@ -1,0 +1,11 @@
+framework module XYZHelloWorld {
+  umbrella header "XYZHelloWorld.h"
+
+  export *
+  module * { export * }
+}
+
+module XYZHelloWorld.Swift {
+  header "XYZHelloWorld-Swift.h"
+  requires objc
+}
