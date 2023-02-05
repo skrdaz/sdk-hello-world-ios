@@ -9,21 +9,37 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "XYZHelloWorld"
-  spec.version            = "1.0.2"
+  spec.version            = "1.0.3"
   spec.summary            = "Star Wars Library for iOS apps"
   spec.description        = "..."
   spec.homepage           = "..."
   spec.documentation_url  = "..."
   spec.license            = { :type => "MIT" }
-  spec.author            = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
+  spec.author             = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
   spec.source             = { :git => 'https://github.com/skrdaz/sdk-hello-world-ios.git', :tag => "#{spec.version}" }
   spec.swift_version      = "5.3"
 
   # Supported deployment targets
   spec.ios.deployment_target  = "10.0"
+  # spec.ios.deployment_target = '11.0'
+  spec.ios.vendored_frameworks = "XYZHelloWorld.xcframework"
+  
+  # spec.name               = "XYZHelloWorld"
+  # spec.version            = "1.0.2"
+  # spec.summary            = "Star Wars Library for iOS apps"
+  # spec.description        = "..."
+  # spec.homepage           = "..."
+  # spec.documentation_url  = "..."
+  # spec.license            = { :type => "MIT" }
+  # spec.author            = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
+  # spec.source             = { :git => 'https://github.com/skrdaz/sdk-hello-world-ios.git', :tag => "#{spec.version}" }
+  # spec.swift_version      = "5.3"
 
-  # Published binaries
-  vendored_frameworks = "XYZHelloWorld.xcframework"
+  # # Supported deployment targets
+  # spec.ios.deployment_target  = "10.0"
+
+  # # Published binaries
+  # vendored_frameworks = "XYZHelloWorld.xcframework"
 
   # spec.name         = "XYZHelloWorld"
   # spec.version      = "1.0.0"
