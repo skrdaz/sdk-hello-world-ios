@@ -12,6 +12,11 @@ public class SpeakUp {
     
     var delegate: SpeakUpListener?
     
+    public init() {
+        
+    }
+
+    
     public func sayHello() -> String {
         return "say hello"
     }
