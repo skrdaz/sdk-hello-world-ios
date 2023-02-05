@@ -9,6 +9,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 public class SpeakUp {
+  public var delegate: XYZHelloWorld.SpeakUpListener?
   public init()
   public func sayHello() -> Swift.String
   public func callApi(url: Swift.String, param: [Swift.String : Swift.String])

@@ -10,7 +10,7 @@ import Alamofire
 
 public class SpeakUp {
     
-    var delegate: SpeakUpListener?
+    public var delegate: SpeakUpListener?
     
     public init() {
         

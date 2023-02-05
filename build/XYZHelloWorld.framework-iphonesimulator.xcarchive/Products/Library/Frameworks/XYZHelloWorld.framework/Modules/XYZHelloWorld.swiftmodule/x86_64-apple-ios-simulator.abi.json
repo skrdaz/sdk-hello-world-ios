@@ -27,6 +27,116 @@
         "printedName": "SpeakUp",
         "children": [
           {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "XYZHelloWorld.SpeakUpListener?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SpeakUpListener",
+                    "printedName": "XYZHelloWorld.SpeakUpListener",
+                    "usr": "s:13XYZHelloWorld15SpeakUpListenerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvp",
+            "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvp",
+            "moduleName": "XYZHelloWorld",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "XYZHelloWorld.SpeakUpListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SpeakUpListener",
+                        "printedName": "XYZHelloWorld.SpeakUpListener",
+                        "usr": "s:13XYZHelloWorld15SpeakUpListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvg",
+                "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvg",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "XYZHelloWorld.SpeakUpListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SpeakUpListener",
+                        "printedName": "XYZHelloWorld.SpeakUpListener",
+                        "usr": "s:13XYZHelloWorld15SpeakUpListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvs",
+                "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvs",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvM",
+                "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvM",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",

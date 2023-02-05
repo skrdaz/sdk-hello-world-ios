@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "XYZHelloWorld"
-  spec.version            = "1.0.8"
+  spec.version            = "1.0.9"
   spec.summary            = "Star Wars Library for iOS apps"
   spec.description        = "..."
   spec.homepage           = "..."
