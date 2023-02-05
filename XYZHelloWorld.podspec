@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "XYZHelloWorld"
-  spec.version            = "1.0.4"
+  spec.version            = "1.0.6"
   spec.summary            = "Star Wars Library for iOS apps"
   spec.description        = "..."
   spec.homepage           = "..."
@@ -23,6 +23,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = "10.0"
   # spec.ios.deployment_target = '11.0'
   spec.ios.vendored_frameworks = "XYZHelloWorld.xcframework"
+  spec.dependency 'Alamofire'
   
   # spec.name               = "XYZHelloWorld"
   # spec.version            = "1.0.2"
