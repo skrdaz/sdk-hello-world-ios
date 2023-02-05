@@ -8,15 +8,15 @@
 import Foundation
 import Alamofire
 
-class SpeakUp {
+public class SpeakUp {
     
     var delegate: SpeakUpListener?
     
-    func sayHello() -> String {
+    public func sayHello() -> String {
         return "say hello"
     }
     
-    func callApi(url:String, param: [String:String]) {
+    public func callApi(url:String, param: [String:String]) {
 
         let headers: HTTPHeaders = []
         let request = AF.request(url, method: .post, parameters: param, encoder: JSONParameterEncoder.default, headers: headers)
@@ -31,7 +31,7 @@ class SpeakUp {
     }
 }
 
-protocol SpeakUpListener {
+public protocol SpeakUpListener {
     
     func onResponse(_ responseStr: String)
 }
