@@ -9,13 +9,12 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "XYZHelloWorld"
-  spec.version            = "1.0.0"
+  spec.version            = "1.0.2"
   spec.summary            = "Star Wars Library for iOS apps"
   spec.description        = "..."
   spec.homepage           = "..."
   spec.documentation_url  = "..."
   spec.license            = { :type => "MIT" }
-  # spec.author             = { "Star Wars" => "..." }
   spec.author            = { "skrdaz" => "adin.zulia@sangkuriangjayapersada.com" }
   spec.source             = { :git => 'https://github.com/skrdaz/sdk-hello-world-ios.git', :tag => "#{spec.version}" }
   spec.swift_version      = "5.3"
