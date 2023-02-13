@@ -4,6 +4,51 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/DotFaceLite.framework/DotFaceLite</key>
+		<data>
+		qtejdhnpmA5cv7MUpYC0phuUdwo=
+		</data>
+		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
+		<data>
+		ghcXgS4/5myUvSYTPTQBn+boTHs=
+		</data>
+		<key>Frameworks/DotFaceLite.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MdKDx/vx4sz+XS1OZ8t8mrI2ryw=
+		</data>
+		<key>Frameworks/DotFaceLite.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ovm7iYsYiY32Tq/uGpv07q6nYuc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/DotProtocolBuffers</key>
+		<data>
+		TTga+KDUuiD5fKvPYpNZfy8Bq2k=
+		</data>
+		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
+		<data>
+		WMFgUsMojCeO1nzEpsOxJ0llpF0=
+		</data>
+		<key>Frameworks/DotProtocolBuffers.framework/_CodeSignature/CodeResources</key>
+		<data>
+		J4xxxAwFXVRBi9dB3U2WuoA+Jjc=
+		</data>
+		<key>Frameworks/SamFace.framework/Info.plist</key>
+		<data>
+		n1VY7vHMly6UPXDNdRkt22201cQ=
+		</data>
+		<key>Frameworks/SamFace.framework/SamFace</key>
+		<data>
+		dY8HhUHGz05qvvzdgT+StuqpFK4=
+		</data>
+		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
+		<data>
+		2ssrSqSBKO0P1+RjeZ3N42Nsu6M=
+		</data>
 		<key>Headers/XYZHelloWorld-Swift.h</key>
 		<data>
 		qPOXyO7/w/YbU2rxRHDcQYWLWL0=
@@ -18,11 +63,11 @@
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		oGbYjViAzO71BoTJxUakKd43Fqc=
+		1t0+oFLPG34Hiz7Fgfz1axgbQcQ=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		oLhZ/6gEWspoKg/zIwfr0Aq03r8=
+		zz4FrF9zxm9md7A0ZA/qFHnrxF8=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +75,11 @@
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		oLhZ/6gEWspoKg/zIwfr0Aq03r8=
+		zz4FrF9zxm9md7A0ZA/qFHnrxF8=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fYMdvh7O7MgP+NFXq5UJpLz/YfU=
+		cW48j/qipGgpbujxPsndd684DWo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,6 +88,78 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/DotFaceLite.framework/DotFaceLite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+TA1mmBBPy/7Bzb/CGKyIkopbt9apJSzz1rLpmyjULg=
+			</data>
+		</dict>
+		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BgCGvuvYTtUGBN+ia0t+Gfp4PBmLk5L/B5bNXEniLow=
+			</data>
+		</dict>
+		<key>Frameworks/DotFaceLite.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f6OWIAHA1Be7mPZrKvWK+AWsOAcbE8LazTIU3mM5ow4=
+			</data>
+		</dict>
+		<key>Frameworks/DotFaceLite.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JWQkNJxrJU575Lq6hbEMwNtwQ+nDgHOFKAMfC7Ravkw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/DotProtocolBuffers</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Oa+haC/z0p5IbXO39z1JH53JGgP59jQa5Nvmnc4RkAE=
+			</data>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jgSHEbN5kCS/iBM8J2FFntQ7y3Q0dq8MvV30EjomAnA=
+			</data>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rbe6ut3paf2BGIbeJAiuKxhOhNaVn+H5Nzy8xrWj59M=
+			</data>
+		</dict>
+		<key>Frameworks/SamFace.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MkIbWcFspBfm56gCb/pTKDM8gJ7ftl8eEOP0Qu/kZZs=
+			</data>
+		</dict>
+		<key>Frameworks/SamFace.framework/SamFace</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oCMCoMw7703I3DI8BAaNTNxYXo8wq76fRFs2H6vYhS0=
+			</data>
+		</dict>
+		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			okGkh5ZOrAmnCE29atQupfMTfcBgMbL9w/YZcvRiFA0=
+			</data>
+		</dict>
 		<key>Headers/XYZHelloWorld-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -61,14 +178,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			99/pKB1F9Mq0sAeAluRPRuUAgdqYJHUlwfBPZjlt+3I=
+			5UvizvTkYvqyJz/+Rzd7kmzPJo1D+4Y6yNqKE9HR0w0=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o7Bg+jwcu+0PKT6THqGjlBiBGeUjZuQEE4uVJJjVS4A=
+			MgsUY1xDxkUVUaDVvKJ1BnrDzPPh2xw/I2jdyRmuy/I=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +199,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o7Bg+jwcu+0PKT6THqGjlBiBGeUjZuQEE4uVJJjVS4A=
+			MgsUY1xDxkUVUaDVvKJ1BnrDzPPh2xw/I2jdyRmuy/I=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z4mKOM9wzlNDOjxTnz3iMwD8boH6WaFvTvVymd++lu4=
+			7h2rTpC9YDcqA/jPjs+Vdu7QVKQY0Ue7DEYr1owijuw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

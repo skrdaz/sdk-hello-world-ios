@@ -13,6 +13,12 @@
 		8409DD93298FE0CF00F4B3AF /* XYZHelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DD92298FE0CF00F4B3AF /* XYZHelloWorldTests.swift */; };
 		8409DD94298FE0CF00F4B3AF /* XYZHelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 8409DD86298FE0CE00F4B3AF /* XYZHelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8409DD9E298FE1C200F4B3AF /* SpeakUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DD9D298FE1C200F4B3AF /* SpeakUp.swift */; };
+		8409DDB0299A189E00F4B3AF /* DotFaceLite.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDAF299A189E00F4B3AF /* DotFaceLite.xcframework */; };
+		8409DDB1299A189E00F4B3AF /* DotFaceLite.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDAF299A189E00F4B3AF /* DotFaceLite.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8409DDB4299A18A200F4B3AF /* DotProtocolBuffers.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB3299A18A200F4B3AF /* DotProtocolBuffers.xcframework */; };
+		8409DDB5299A18A200F4B3AF /* DotProtocolBuffers.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB3299A18A200F4B3AF /* DotProtocolBuffers.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8409DDB7299A18A800F4B3AF /* SamFace.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB6299A18A700F4B3AF /* SamFace.xcframework */; };
+		8409DDB8299A18A800F4B3AF /* SamFace.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB6299A18A700F4B3AF /* SamFace.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		903C37014D585AC18D6B18BA /* Pods_XYZHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12577B9DEB6C31B5ABD5412 /* Pods_XYZHelloWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8409DDB2299A189E00F4B3AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8409DDB1299A189E00F4B3AF /* DotFaceLite.xcframework in Embed Frameworks */,
+				8409DDB5299A18A200F4B3AF /* DotProtocolBuffers.xcframework in Embed Frameworks */,
+				8409DDB8299A18A800F4B3AF /* SamFace.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		16844C9B3A9B8B4F8197C4F7 /* Pods-XYZHelloWorld-XYZHelloWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHelloWorld-XYZHelloWorldTests.debug.xcconfig"; path = "Target Support Files/Pods-XYZHelloWorld-XYZHelloWorldTests/Pods-XYZHelloWorld-XYZHelloWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		17228A15079DED5A6656AA7B /* Pods_XYZHelloWorld_XYZHelloWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZHelloWorld_XYZHelloWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +58,9 @@
 		8409DD8D298FE0CF00F4B3AF /* XYZHelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYZHelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409DD92298FE0CF00F4B3AF /* XYZHelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHelloWorldTests.swift; sourceTree = "<group>"; };
 		8409DD9D298FE1C200F4B3AF /* SpeakUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakUp.swift; sourceTree = "<group>"; };
+		8409DDAF299A189E00F4B3AF /* DotFaceLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DotFaceLite.xcframework; path = "../../../../../../swift-lib/dot-face-lite/DotFaceLite/DotFaceLite.xcframework"; sourceTree = "<group>"; };
+		8409DDB3299A18A200F4B3AF /* DotProtocolBuffers.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DotProtocolBuffers.xcframework; path = "../../../../../../swift-lib/dot-protobuf/DotProtocolBuffers/DotProtocolBuffers.xcframework"; sourceTree = "<group>"; };
+		8409DDB6299A18A700F4B3AF /* SamFace.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SamFace.xcframework; path = "../../../../../../swift-lib/sam-face/SamFace/SamFace.xcframework"; sourceTree = "<group>"; };
 		C48CC58A719AB81E96BCAA34 /* Pods-XYZHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-XYZHelloWorld/Pods-XYZHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EEDA0B72C3EF141181F849 /* Pods-XYZHelloWorld-XYZHelloWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHelloWorld-XYZHelloWorldTests.release.xcconfig"; path = "Target Support Files/Pods-XYZHelloWorld-XYZHelloWorldTests/Pods-XYZHelloWorld-XYZHelloWorldTests.release.xcconfig"; sourceTree = "<group>"; };
 		E12577B9DEB6C31B5ABD5412 /* Pods_XYZHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8409DDB4299A18A200F4B3AF /* DotProtocolBuffers.xcframework in Frameworks */,
+				8409DDB0299A189E00F4B3AF /* DotFaceLite.xcframework in Frameworks */,
+				8409DDB7299A18A800F4B3AF /* SamFace.xcframework in Frameworks */,
 				903C37014D585AC18D6B18BA /* Pods_XYZHelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +93,9 @@
 		3B1A432E7134E8772A949E74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8409DDB6299A18A700F4B3AF /* SamFace.xcframework */,
+				8409DDB3299A18A200F4B3AF /* DotProtocolBuffers.xcframework */,
+				8409DDAF299A189E00F4B3AF /* DotFaceLite.xcframework */,
 				E12577B9DEB6C31B5ABD5412 /* Pods_XYZHelloWorld.framework */,
 				17228A15079DED5A6656AA7B /* Pods_XYZHelloWorld_XYZHelloWorldTests.framework */,
 			);
@@ -143,6 +174,7 @@
 				8409DD7F298FE0CE00F4B3AF /* Sources */,
 				8409DD80298FE0CE00F4B3AF /* Frameworks */,
 				8409DD81298FE0CE00F4B3AF /* Resources */,
+				8409DDB2299A189E00F4B3AF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

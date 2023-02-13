@@ -1,0 +1,535 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DotFaceLite
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Accelerate
+import CommonCrypto
+@_exported import DotFaceLite
+import DotProtocolBuffers
+import Foundation
+import SamFace
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureController) final public class FaceAutoCaptureController : ObjectiveC.NSObject {
+  public enum Error : Foundation.LocalizedError {
+    case forbiddenProcessAfterFinished
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: DotFaceLite.FaceAutoCaptureController.Error, b: DotFaceLite.FaceAutoCaptureController.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc(DOTFLFaceAutoCaptureControllerEvent) public enum Event : Swift.Int {
+    case candidateSelectionStarted
+    case captured
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureControllerWrappedEvent) final public class WrappedEvent : ObjectiveC.NSObject {
+    @objc final public let event: DotFaceLite.FaceAutoCaptureController.Event
+    @objc public init(event: DotFaceLite.FaceAutoCaptureController.Event)
+    @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+    @objc override final public var hash: Swift.Int {
+      @objc get
+    }
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureControllerProcessingResult) final public class ProcessingResult : ObjectiveC.NSObject {
+    @objc final public let detection: DotFaceLite.FaceAutoCaptureDetection
+    @objc final public let result: DotFaceLite.FaceAutoCaptureResult?
+    @objc final public let events: Swift.Set<DotFaceLite.FaceAutoCaptureController.WrappedEvent>
+    @objc public init(detection: DotFaceLite.FaceAutoCaptureDetection, result: DotFaceLite.FaceAutoCaptureResult?, events: Swift.Set<DotFaceLite.FaceAutoCaptureController.WrappedEvent>)
+    @objc deinit
+  }
+  @objc final public let configuration: DotFaceLite.FaceAutoCaptureControllerConfiguration
+  @objc convenience public init(configuration: DotFaceLite.FaceAutoCaptureControllerConfiguration)
+  @objc final public func restart()
+  @objc final public func process(bgraRawImage: DotFaceLite.BgraRawImage, timestampMillis: Swift.Int) throws -> DotFaceLite.FaceAutoCaptureController.ProcessingResult
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLCGImageFactory) final public class CGImageFactory : ObjectiveC.NSObject {
+  @objc public static func create(bgraRawImage: DotFaceLite.BgraRawImage) -> CoreGraphics.CGImage
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLBgraRawImage) final public class BgraRawImage : ObjectiveC.NSObject {
+  @objc final public let size: DotFaceLite.ImageSize
+  @objc final public var bytes: Foundation.Data {
+    @objc get
+    @objc set
+  }
+  @objc convenience public init(bytes: Foundation.Data, size: DotFaceLite.ImageSize)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLImageSize) final public class ImageSize : ObjectiveC.NSObject {
+  @objc final public let width: Swift.Int
+  @objc final public let height: Swift.Int
+  @objc public init(width: Swift.Int, height: Swift.Int)
+  @objc final public func calculatePixelCount() -> Swift.Int
+  @objc final public func calculateWidthToHeightRatio() -> Swift.Double
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLFaceAutoCaptureStyle) final public class FaceAutoCaptureStyle : ObjectiveC.NSObject {
+  public struct Defaults {
+    public static let backgroundColor: UIKit.UIColor
+    public static let instructionFont: UIKit.UIFont
+    public static let instructionTextColor: UIKit.UIColor
+    public static let instructionCandidateSelectionTextColor: UIKit.UIColor
+    public static let instructionBackgroundColor: UIKit.UIColor
+    public static let instructionCandidateSelectionBackgroundColor: UIKit.UIColor
+    public static let placeholderColor: UIKit.UIColor
+    public static let placeholderCandidateSelectionColor: UIKit.UIColor
+    public static let detectionLayerColor: UIKit.UIColor
+    public static let overlayColor: UIKit.UIColor
+  }
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let instructionFont: UIKit.UIFont
+  @objc final public let instructionTextColor: UIKit.UIColor
+  @objc final public let instructionCandidateSelectionTextColor: UIKit.UIColor
+  @objc final public let instructionBackgroundColor: UIKit.UIColor
+  @objc final public let instructionCandidateSelectionBackgroundColor: UIKit.UIColor
+  @objc final public let placeholderColor: UIKit.UIColor
+  @objc final public let placeholderCandidateSelectionColor: UIKit.UIColor
+  @objc final public let detectionLayerColor: UIKit.UIColor
+  @objc final public let overlayColor: UIKit.UIColor
+  @objc public init(backgroundColor: UIKit.UIColor = Defaults.backgroundColor, instructionFont: UIKit.UIFont = Defaults.instructionFont, instructionTextColor: UIKit.UIColor = Defaults.instructionTextColor, instructionCandidateSelectionTextColor: UIKit.UIColor = Defaults.instructionCandidateSelectionTextColor, instructionBackgroundColor: UIKit.UIColor = Defaults.instructionBackgroundColor, instructionCandidateSelectionBackgroundColor: UIKit.UIColor = Defaults.instructionCandidateSelectionBackgroundColor, placeholderColor: UIKit.UIColor = Defaults.placeholderColor, placeholderCandidateSelectionColor: UIKit.UIColor = Defaults.placeholderCandidateSelectionColor, detectionLayerColor: UIKit.UIColor = Defaults.detectionLayerColor, overlayColor: UIKit.UIColor = Defaults.overlayColor)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLFaceOutOfBoundsValidator) final public class FaceOutOfBoundsValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultMinEdgeDistanceToImageShorterSideRatioThreshold: Swift.Double
+  @objc final public let minEdgeDistanceToImageShorterSideRatioThreshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(minEdgeDistanceToImageShorterSideRatioThreshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLIntervalDouble) final public class IntervalDouble : ObjectiveC.NSObject {
+  public enum Error : Foundation.LocalizedError {
+    case invalidBounds
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: DotFaceLite.IntervalDouble.Error, b: DotFaceLite.IntervalDouble.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public let min: Swift.Double
+  @objc final public let max: Swift.Double
+  @objc public init(min: Swift.Double, max: Swift.Double) throws
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLIntervalFloat) final public class IntervalFloat : ObjectiveC.NSObject {
+  public enum Error : Foundation.LocalizedError {
+    case invalidBounds
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: DotFaceLite.IntervalFloat.Error, b: DotFaceLite.IntervalFloat.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public let min: Swift.Float
+  @objc final public let max: Swift.Float
+  @objc public init(min: Swift.Float, max: Swift.Float) throws
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLBgraRawImageFactory) final public class BgraRawImageFactory : ObjectiveC.NSObject {
+  @objc public static func create(cgImage: CoreGraphics.CGImage) -> DotFaceLite.BgraRawImage
+  @objc public static func create(ciImage: CoreImage.CIImage, ciContext: CoreImage.CIContext) -> DotFaceLite.BgraRawImage
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureDetection) final public class FaceAutoCaptureDetection : ObjectiveC.NSObject {
+  @objc final public let bgraRawImage: DotFaceLite.BgraRawImage
+  @objc final public let faceDetectorResult: DotFaceLite.FaceDetector.Result
+  @objc final public let position: DotFaceLite.DetectionPosition?
+  @objc final public let validatorIdentifiers: [Swift.String]
+  @objc public init(bgraRawImage: DotFaceLite.BgraRawImage, faceDetectorResult: DotFaceLite.FaceDetector.Result, position: DotFaceLite.DetectionPosition?, validatorIdentifiers: [Swift.String])
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(DOTFLCameraFacing) public enum CameraFacing : Swift.Int, Swift.CustomStringConvertible {
+  case front
+  case back
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLPointDouble) final public class PointDouble : ObjectiveC.NSObject {
+  @objc final public let x: Swift.Double
+  @objc final public let y: Swift.Double
+  @objc public init(x: Swift.Double, y: Swift.Double)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureConfiguration) final public class FaceAutoCaptureConfiguration : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @objc(DOTFLQualityAttributeThresholds) final public class QualityAttributeThresholds : ObjectiveC.NSObject {
+    public struct Defaults {
+      public static let minConfidence: Swift.Double
+      public static let sizeInterval: DotFaceLite.IntervalDouble
+    }
+    @objc final public let minConfidence: Swift.Double
+    @objc final public let sizeInterval: DotFaceLite.IntervalDouble
+    @objc public init(minConfidence: Swift.Double = Defaults.minConfidence, sizeInterval: DotFaceLite.IntervalDouble = Defaults.sizeInterval) throws
+    @objc override convenience dynamic public init()
+    @objc override final public var description: Swift.String {
+      @objc get
+    }
+    @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+    @objc override final public var hash: Swift.Int {
+      @objc get
+    }
+    @objc deinit
+  }
+  public struct Defaults {
+    public static let isDetectionLayerVisible: Swift.Bool
+    public static let cameraFacing: DotFaceLite.CameraFacing
+    public static let cameraPreviewScaleType: DotFaceLite.CameraPreviewScaleType
+  }
+  @objc final public let qualityAttributeThresholds: DotFaceLite.FaceAutoCaptureConfiguration.QualityAttributeThresholds
+  @objc final public let isDetectionLayerVisible: Swift.Bool
+  @objc final public let cameraFacing: DotFaceLite.CameraFacing
+  @objc final public let cameraPreviewScaleType: DotFaceLite.CameraPreviewScaleType
+  @objc convenience public init(qualityAttributeThresholds: DotFaceLite.FaceAutoCaptureConfiguration.QualityAttributeThresholds = QualityAttributeThresholds(), isDetectionLayerVisible: Swift.Bool = Defaults.isDetectionLayerVisible, cameraFacing: DotFaceLite.CameraFacing = Defaults.cameraFacing, cameraPreviewScaleType: DotFaceLite.CameraPreviewScaleType = Defaults.cameraPreviewScaleType)
+  @objc override convenience dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLBrightnessTooHighValidator) final public class BrightnessTooHighValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultThreshold: Swift.Double
+  @objc final public let threshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(threshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureResult) final public class FaceAutoCaptureResult : ObjectiveC.NSObject {
+  @objc final public let bgraRawImage: DotFaceLite.BgraRawImage
+  @objc final public let faceDetectorResult: DotFaceLite.FaceDetector.Result
+  @objc public init(bgraRawImage: DotFaceLite.BgraRawImage, faceDetectorResult: DotFaceLite.FaceDetector.Result)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLMagnifEyeLivenessStyle) final public class MagnifEyeLivenessStyle : ObjectiveC.NSObject {
+  public struct Defaults {
+    public static let backgroundColor: UIKit.UIColor
+    public static let instructionFont: UIKit.UIFont
+    public static let instructionTextColor: UIKit.UIColor
+    public static let instructionCandidateSelectionTextColor: UIKit.UIColor
+    public static let instructionBackgroundColor: UIKit.UIColor
+    public static let instructionCandidateSelectionBackgroundColor: UIKit.UIColor
+    public static let placeholderColor: UIKit.UIColor
+    public static let placeholderCandidateSelectionColor: UIKit.UIColor
+    public static let detectionLayerColor: UIKit.UIColor
+    public static let overlayColor: UIKit.UIColor
+  }
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let instructionFont: UIKit.UIFont
+  @objc final public let instructionTextColor: UIKit.UIColor
+  @objc final public let instructionCandidateSelectionTextColor: UIKit.UIColor
+  @objc final public let instructionBackgroundColor: UIKit.UIColor
+  @objc final public let instructionCandidateSelectionBackgroundColor: UIKit.UIColor
+  @objc final public let placeholderColor: UIKit.UIColor
+  @objc final public let placeholderCandidateSelectionColor: UIKit.UIColor
+  @objc final public let detectionLayerColor: UIKit.UIColor
+  @objc final public let overlayColor: UIKit.UIColor
+  @objc public init(backgroundColor: UIKit.UIColor = Defaults.backgroundColor, instructionFont: UIKit.UIFont = Defaults.instructionFont, instructionTextColor: UIKit.UIColor = Defaults.instructionTextColor, instructionCandidateSelectionTextColor: UIKit.UIColor = Defaults.instructionCandidateSelectionTextColor, instructionBackgroundColor: UIKit.UIColor = Defaults.instructionBackgroundColor, instructionCandidateSelectionBackgroundColor: UIKit.UIColor = Defaults.instructionCandidateSelectionBackgroundColor, placeholderColor: UIKit.UIColor = Defaults.placeholderColor, placeholderCandidateSelectionColor: UIKit.UIColor = Defaults.placeholderCandidateSelectionColor, detectionLayerColor: UIKit.UIColor = Defaults.detectionLayerColor, overlayColor: UIKit.UIColor = Defaults.overlayColor)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLRectangleDouble) final public class RectangleDouble : ObjectiveC.NSObject {
+  @objc final public let left: Swift.Double
+  @objc final public let top: Swift.Double
+  @objc final public let right: Swift.Double
+  @objc final public let bottom: Swift.Double
+  @objc public init(left: Swift.Double, top: Swift.Double, right: Swift.Double, bottom: Swift.Double)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLSharpnessTooLowValidator) final public class SharpnessTooLowValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultThreshold: Swift.Double
+  @objc final public let threshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(threshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLDetectionPosition) final public class DetectionPosition : ObjectiveC.NSObject {
+  @objc final public let center: DotFaceLite.PointDouble
+  @objc final public let sizeToImageShorterSideRatio: Swift.Double
+  @objc public init(center: DotFaceLite.PointDouble, sizeToImageShorterSideRatio: Swift.Double)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureFrameParameters) final public class FaceAutoCaptureFrameParameters : ObjectiveC.NSObject {
+  @objc final public let faceDetectorResult: DotFaceLite.FaceDetector.Result
+  @objc final public let detectionPosition: DotFaceLite.DetectionPosition?
+  @objc public init(faceDetectorResult: DotFaceLite.FaceDetector.Result, detectionPosition: DotFaceLite.DetectionPosition?)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLSizeTooSmallValidator) final public class SizeTooSmallValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultMinDetectionSizeToImageShorterSideRatioThreshold: Swift.Double
+  @objc final public let minDetectionSizeToImageShorterSideRatioThreshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(minDetectionSizeToImageShorterSideRatioThreshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLMagnifEyeLivenessConfiguration) final public class MagnifEyeLivenessConfiguration : ObjectiveC.NSObject {
+  public struct Defaults {
+    public static let isDetectionLayerVisible: Swift.Bool
+    public static let cameraFacing: DotFaceLite.CameraFacing
+    public static let cameraPreviewScaleType: DotFaceLite.CameraPreviewScaleType
+  }
+  @objc final public let isDetectionLayerVisible: Swift.Bool
+  @objc final public let cameraFacing: DotFaceLite.CameraFacing
+  @objc final public let cameraPreviewScaleType: DotFaceLite.CameraPreviewScaleType
+  @objc public init(isDetectionLayerVisible: Swift.Bool = Defaults.isDetectionLayerVisible, cameraFacing: DotFaceLite.CameraFacing = Defaults.cameraFacing, cameraPreviewScaleType: DotFaceLite.CameraPreviewScaleType = Defaults.cameraPreviewScaleType)
+  @objc deinit
+}
+@objc(DOTFLFaceAutoCaptureViewControllerDelegate) public protocol FaceAutoCaptureViewControllerDelegate {
+  @objc(faceLiteAutoCaptureViewController:captured:) func faceAutoCaptureViewController(_ viewController: DotFaceLite.FaceAutoCaptureViewController, captured result: DotFaceLite.FaceAutoCaptureResult)
+  @objc(faceLiteAutoCaptureViewController:processed:) optional func faceAutoCaptureViewController(_ viewController: DotFaceLite.FaceAutoCaptureViewController, processed detection: DotFaceLite.FaceAutoCaptureDetection)
+  @objc(faceLiteAutoCaptureViewControllerCandidateSelectionStarted:) optional func faceAutoCaptureViewControllerCandidateSelectionStarted(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerStopped:) optional func faceAutoCaptureViewControllerStopped(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerNoCameraPermission:) optional func faceAutoCaptureViewControllerNoCameraPermission(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewDidLoad:) optional func faceAutoCaptureViewControllerViewDidLoad(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewDidLayoutSubviews:) optional func faceAutoCaptureViewControllerViewDidLayoutSubviews(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewWillAppear:) optional func faceAutoCaptureViewControllerViewWillAppear(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewDidAppear:) optional func faceAutoCaptureViewControllerViewDidAppear(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewWillDisappear:) optional func faceAutoCaptureViewControllerViewWillDisappear(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewDidDisappear:) optional func faceAutoCaptureViewControllerViewDidDisappear(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+  @objc(faceLiteAutoCaptureViewControllerViewWillTransition:) optional func faceAutoCaptureViewControllerViewWillTransition(_ viewController: DotFaceLite.FaceAutoCaptureViewController)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class DotFaceLiteLibrary : ObjectiveC.NSObject {
+  @objc public static let versionName: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLFaceDetector) final public class FaceDetector : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceDetectorResult) final public class Result : ObjectiveC.NSObject {
+    @objc final public let confidence: Swift.Double
+    @objc final public let normalizedRectangle: DotFaceLite.RectangleDouble?
+    @objc final public let imageParameters: DotFaceLite.ImageParameters?
+    @objc public init(confidence: Swift.Double, normalizedRectangle: DotFaceLite.RectangleDouble?, imageParameters: DotFaceLite.ImageParameters?)
+    @objc override final public var description: Swift.String {
+      @objc get
+    }
+    @objc deinit
+  }
+  @objc final public func detect(bgraRawImage: DotFaceLite.BgraRawImage) throws -> DotFaceLite.FaceDetector.Result
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(DOTFLFaceAutoCaptureDetectionValidator) public protocol FaceAutoCaptureDetectionValidator {
+  @objc var identifier: Swift.String { get }
+  @objc var dependencyIdentifiers: Swift.Set<Swift.String> { get }
+  @objc func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @objc(DOTFLSizeTooLargeValidator) final public class SizeTooLargeValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultMaxDetectionSizeToImageShorterSideRatioThreshold: Swift.Double
+  @objc final public let maxDetectionSizeToImageShorterSideRatioThreshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(maxDetectionSizeToImageShorterSideRatioThreshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLBrightnessTooLowValidator) final public class BrightnessTooLowValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultThreshold: Swift.Double
+  @objc final public let threshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(threshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLImageParameters) final public class ImageParameters : ObjectiveC.NSObject {
+  @objc public init(sharpness: Swift.Double, brightness: Swift.Double)
+  @objc final public let brightness: Swift.Double
+  @objc final public let sharpness: Swift.Double
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLLogger) final public class Logger : ObjectiveC.NSObject {
+  @objc public static var logLevel: DotFaceLite.Logger.LogLevel
+  @objc(DOTFLLoggerLogLevel) public enum LogLevel : Swift.Int, Swift.CustomStringConvertible {
+    case info
+    case debug
+    case warning
+    case error
+    case none
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public static func info(_ message: Swift.String? = nil, file: Swift.String = #file, function: Swift.String = #function)
+  @objc public static func debug(_ message: Swift.String? = nil, file: Swift.String = #file, function: Swift.String = #function)
+  @objc public static func warning(_ message: Swift.String? = nil, file: Swift.String = #file, function: Swift.String = #function)
+  @objc public static func error(_ message: Swift.String? = nil, file: Swift.String = #file, function: Swift.String = #function)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureControllerConfiguration) final public class FaceAutoCaptureControllerConfiguration : ObjectiveC.NSObject {
+  public enum Error : Foundation.LocalizedError {
+    case missingValidatorDependencies(currentValidator: Swift.String, missingValidators: Swift.Set<Swift.String>)
+    public var errorDescription: Swift.String? {
+      get
+    }
+  }
+  public struct Defaults {
+    public static let minValidFramesInRowToStartCandidateSelection: Swift.Int
+    public static let candidateSelectionDurationMillis: Swift.Int
+  }
+  @objc final public let minValidFramesInRowToStartCandidateSelection: Swift.Int
+  @objc final public let candidateSelectionDurationMillis: Swift.Int
+  @objc final public let detectionNormalizedRectangle: DotFaceLite.RectangleDouble?
+  @objc final public let validators: [DotFaceLite.FaceAutoCaptureDetectionValidator]
+  @objc public init(minValidFramesInRowToStartCandidateSelection: Swift.Int = Defaults.minValidFramesInRowToStartCandidateSelection, candidateSelectionDurationMillis: Swift.Int = Defaults.candidateSelectionDurationMillis, detectionNormalizedRectangle: DotFaceLite.RectangleDouble? = nil, validators: [DotFaceLite.FaceAutoCaptureDetectionValidator]) throws
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(DOTFLCameraPreviewScaleType) public enum CameraPreviewScaleType : Swift.Int, Swift.CustomStringConvertible {
+  case fit
+  case fill
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DOTFLCIImageFactory) final public class CIImageFactory : ObjectiveC.NSObject {
+  @objc public static func create(bgraRawImage: DotFaceLite.BgraRawImage) -> CoreImage.CIImage
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(DOTFLFaceAutoCaptureViewController) @_Concurrency.MainActor(unsafe) final public class FaceAutoCaptureViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) final public let configuration: DotFaceLite.FaceAutoCaptureConfiguration
+  @objc @_Concurrency.MainActor(unsafe) final public let style: DotFaceLite.FaceAutoCaptureStyle
+  @objc @_Concurrency.MainActor(unsafe) weak final public var delegate: DotFaceLite.FaceAutoCaptureViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public static func create(configuration: DotFaceLite.FaceAutoCaptureConfiguration = .init(), style: DotFaceLite.FaceAutoCaptureStyle = .init()) -> DotFaceLite.FaceAutoCaptureViewController
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @objc @_Concurrency.MainActor(unsafe) final public func start()
+  @objc @_Concurrency.MainActor(unsafe) final public func restart()
+  @objc @_Concurrency.MainActor(unsafe) final public func stopAsync()
+  @objc @_Concurrency.MainActor(unsafe) final public func requestCapture()
+  @objc deinit
+}
+extension DotFaceLite.FaceAutoCaptureViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+}
+@_inheritsConvenienceInitializers @objc(DOTFLFaceNotDetectedValidator) final public class FaceNotDetectedValidator : ObjectiveC.NSObject, DotFaceLite.FaceAutoCaptureDetectionValidator {
+  @objc public static let defaultMinConfidenceThreshold: Swift.Double
+  @objc final public let minConfidenceThreshold: Swift.Double
+  @objc final public let identifier: Swift.String
+  @objc final public let dependencyIdentifiers: Swift.Set<Swift.String>
+  @objc public init(minConfidenceThreshold: Swift.Double) throws
+  @objc override convenience dynamic public init()
+  @objc final public func validate(faceAutoCaptureFrameParameters: DotFaceLite.FaceAutoCaptureFrameParameters) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DOTFLLocalization) final public class Localization : ObjectiveC.NSObject {
+  @objc public static var localizationDictionary: [Swift.String : Swift.String]?
+  @objc public static var useLocalizationDictionary: Swift.Bool
+  @objc public static var bundle: Foundation.Bundle
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension DotFaceLite.FaceAutoCaptureController.Error : Swift.Equatable {}
+extension DotFaceLite.FaceAutoCaptureController.Error : Swift.Hashable {}
+extension DotFaceLite.FaceAutoCaptureController.Event : Swift.Equatable {}
+extension DotFaceLite.FaceAutoCaptureController.Event : Swift.Hashable {}
+extension DotFaceLite.FaceAutoCaptureController.Event : Swift.RawRepresentable {}
+extension DotFaceLite.IntervalDouble.Error : Swift.Equatable {}
+extension DotFaceLite.IntervalDouble.Error : Swift.Hashable {}
+extension DotFaceLite.IntervalFloat.Error : Swift.Equatable {}
+extension DotFaceLite.IntervalFloat.Error : Swift.Hashable {}
+extension DotFaceLite.CameraFacing : Swift.Equatable {}
+extension DotFaceLite.CameraFacing : Swift.Hashable {}
+extension DotFaceLite.CameraFacing : Swift.RawRepresentable {}
+extension DotFaceLite.Logger.LogLevel : Swift.Equatable {}
+extension DotFaceLite.Logger.LogLevel : Swift.Hashable {}
+extension DotFaceLite.Logger.LogLevel : Swift.RawRepresentable {}
+extension DotFaceLite.CameraPreviewScaleType : Swift.Equatable {}
+extension DotFaceLite.CameraPreviewScaleType : Swift.Hashable {}
+extension DotFaceLite.CameraPreviewScaleType : Swift.RawRepresentable {}

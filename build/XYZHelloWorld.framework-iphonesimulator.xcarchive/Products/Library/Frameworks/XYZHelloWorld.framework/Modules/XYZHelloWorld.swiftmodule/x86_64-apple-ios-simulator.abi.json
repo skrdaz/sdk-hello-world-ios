@@ -22,6 +22,13 @@
         "moduleName": "XYZHelloWorld"
       },
       {
+        "kind": "Import",
+        "name": "DotFaceLite",
+        "printedName": "DotFaceLite",
+        "declKind": "Import",
+        "moduleName": "XYZHelloWorld"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SpeakUp",
         "printedName": "SpeakUp",
@@ -51,11 +58,8 @@
             "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvp",
             "moduleName": "XYZHelloWorld",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -81,7 +85,6 @@
                 "usr": "s:13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvg",
                 "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvg",
                 "moduleName": "XYZHelloWorld",
-                "implicit": true,
                 "accessorKind": "get"
               },
               {
@@ -113,7 +116,6 @@
                 "usr": "s:13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvs",
                 "mangledName": "$s13XYZHelloWorld7SpeakUpC8delegateAA0cD8Listener_pSgvs",
                 "moduleName": "XYZHelloWorld",
-                "implicit": true,
                 "accessorKind": "set"
               },
               {

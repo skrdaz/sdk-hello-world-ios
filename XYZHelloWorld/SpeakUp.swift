@@ -7,10 +7,18 @@
 
 import Foundation
 import Alamofire
+import DotFaceLite
 
 public class SpeakUp {
     
-    public var delegate: SpeakUpListener?
+    public var delegate: SpeakUpListener? {
+        set(listener) {
+            self.delegate = listener
+        }
+        get {
+            return self.delegate
+        }
+    }
     
     public init() {
         

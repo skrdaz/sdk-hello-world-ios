@@ -4,6 +4,51 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/DotFaceLite.framework/DotFaceLite</key>
+		<data>
+		kIVIibH8xZcnzJhszO8ykbm0WBw=
+		</data>
+		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
+		<data>
+		TwOoPESyQY3VLSduXGkRrTpItxs=
+		</data>
+		<key>Frameworks/DotFaceLite.framework/_CodeSignature/CodeResources</key>
+		<data>
+		mMF3uo05dYAytQmIxTTvqOgEf8Y=
+		</data>
+		<key>Frameworks/DotFaceLite.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ovm7iYsYiY32Tq/uGpv07q6nYuc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/DotProtocolBuffers</key>
+		<data>
+		weMWj+f41c/zzjvkOoLPLj34DRg=
+		</data>
+		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
+		<data>
+		xxpiVJutEttRzoWVi0YqdHPKRoE=
+		</data>
+		<key>Frameworks/DotProtocolBuffers.framework/_CodeSignature/CodeResources</key>
+		<data>
+		6OmcY1uNJHmqv6VDTiO8UYh3/o0=
+		</data>
+		<key>Frameworks/SamFace.framework/Info.plist</key>
+		<data>
+		tAaIMKoDgXEwPBr5c/vJMSP3Eyo=
+		</data>
+		<key>Frameworks/SamFace.framework/SamFace</key>
+		<data>
+		3SRUocWw99fnE4M4htCyJQbZOBw=
+		</data>
+		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
+		<data>
+		hncyX2hIbTabTERlv81kp4e79AA=
+		</data>
 		<key>Headers/XYZHelloWorld-Swift.h</key>
 		<data>
 		Vbvc6r9HEEAz4WS3Y7oYs2J8ZhM=
@@ -18,11 +63,11 @@
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		oGbYjViAzO71BoTJxUakKd43Fqc=
+		1t0+oFLPG34Hiz7Fgfz1axgbQcQ=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		I6f1g1FJLX+bYmMHi8JOBVRFoqs=
+		/81EfnZEwW3rrw78d9HlTCd3AOM=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +75,19 @@
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		I6f1g1FJLX+bYmMHi8JOBVRFoqs=
+		/81EfnZEwW3rrw78d9HlTCd3AOM=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dVLVDrgIf5j9eH8YmPCzIEgodPY=
+		0l6IWuZWV+YKoOjPlVU8jiW1fWU=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		oGbYjViAzO71BoTJxUakKd43Fqc=
+		1t0+oFLPG34Hiz7Fgfz1axgbQcQ=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		b/YaRTLvS6V1K2xgeZaS4ldz62U=
+		uNg37d+rJGliRwqie2axPvRXxhQ=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +95,11 @@
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		b/YaRTLvS6V1K2xgeZaS4ldz62U=
+		uNg37d+rJGliRwqie2axPvRXxhQ=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BbCB4kffsBJDn+ItRVa+PZujW5I=
+		vuc+5NYWpkw8OzzgM/JwrBgV51I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,6 +108,78 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/DotFaceLite.framework/DotFaceLite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R4ers0LDfnBhtCakKmw+STloo0QiqPahJpvGqxFrSL0=
+			</data>
+		</dict>
+		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G939NwweuLA9FE8WlSNsRF60T5+7fADiG/Rch0rWYX8=
+			</data>
+		</dict>
+		<key>Frameworks/DotFaceLite.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4de9rieGboqnCIJ0rFGpesws3Bj/ylDTM8v8eSyfTZQ=
+			</data>
+		</dict>
+		<key>Frameworks/DotFaceLite.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JWQkNJxrJU575Lq6hbEMwNtwQ+nDgHOFKAMfC7Ravkw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/DotProtocolBuffers</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oxTdLtyAqW80mO3N8hiWRCad22OQ8u6D3WxtjoBShvI=
+			</data>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iheUjF16BJyDVd+fE/3qiUcZCHECf3swmK/9wb6XEUs=
+			</data>
+		</dict>
+		<key>Frameworks/DotProtocolBuffers.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vaEdcGoIqJZ+zBsTjotkwJFzyCAolOrDvY67VT0yDfE=
+			</data>
+		</dict>
+		<key>Frameworks/SamFace.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8IXoERxjDHmkP+iWSKY/ohv8RsLKSKewMiGDGfVtB14=
+			</data>
+		</dict>
+		<key>Frameworks/SamFace.framework/SamFace</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9O4RDBcV1767PYl47C3R5Qc3pjweFGpNSgx6lP/S5vY=
+			</data>
+		</dict>
+		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vesp+GbfBp8pJ2HIgbTI0kKunORbtOmqn8ljpHkchYw=
+			</data>
+		</dict>
 		<key>Headers/XYZHelloWorld-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -81,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			99/pKB1F9Mq0sAeAluRPRuUAgdqYJHUlwfBPZjlt+3I=
+			5UvizvTkYvqyJz/+Rzd7kmzPJo1D+4Y6yNqKE9HR0w0=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qayFo2QhDZMNcMEmpNQYqGfJwuhz0/+tP1eILC2ar7A=
+			gt0p+rHpCGHrEmYajp+Kgma46gdQ2nXGNOPSFUp0118=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +219,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qayFo2QhDZMNcMEmpNQYqGfJwuhz0/+tP1eILC2ar7A=
+			gt0p+rHpCGHrEmYajp+Kgma46gdQ2nXGNOPSFUp0118=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1LbOasryu5PPqmx7iov/GDagMzCsEl/oatoH6142SY0=
+			HecuD9Yeqa6HkFHllM5OE5EVULrfqJjjri+fi212l9A=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			99/pKB1F9Mq0sAeAluRPRuUAgdqYJHUlwfBPZjlt+3I=
+			5UvizvTkYvqyJz/+Rzd7kmzPJo1D+4Y6yNqKE9HR0w0=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ooyFLRbZ9dUKN1v2YBZ6kEJY+t4mM0UYgKeZLeLch/I=
+			ZextO2DtY29CFc9E1PpA9Iqz7g3kOn2LXGJlGUNxkb4=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +254,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ooyFLRbZ9dUKN1v2YBZ6kEJY+t4mM0UYgKeZLeLch/I=
+			ZextO2DtY29CFc9E1PpA9Iqz7g3kOn2LXGJlGUNxkb4=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B2Et56OgJhrW7fBk7X4FPfsezdlNfQaG3hLSuepD8TM=
+			i6qCWYNVNuISjyqtNPKsuN579ml/TSyI3ylwk3LGbDs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
