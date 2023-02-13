@@ -7,6 +7,7 @@ target 'XYZHelloWorld' do
 
   # Pods for XYZHelloWorld
   pod 'Alamofire'
+  pod 'SwiftyRSA'
 
   target 'XYZHelloWorldTests' do
     # Pods for testing

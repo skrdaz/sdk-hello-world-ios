@@ -1,16 +1,22 @@
 PODS:
   - Alamofire (5.6.4)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
 
 DEPENDENCIES:
   - Alamofire
+  - SwiftyRSA
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - SwiftyRSA
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
 
-PODFILE CHECKSUM: 3c677a1d875fe5792a39b20b26b54f70412a2dd4
+PODFILE CHECKSUM: 7521b7596cacc43c571b6980671d95de1c150109
 
 COCOAPODS: 1.11.3

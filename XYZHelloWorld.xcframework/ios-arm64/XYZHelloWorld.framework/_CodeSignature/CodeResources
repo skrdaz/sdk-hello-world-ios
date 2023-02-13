@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/DotFaceLite.framework/DotFaceLite</key>
 		<data>
-		qtejdhnpmA5cv7MUpYC0phuUdwo=
+		F6mQ/DW/BgBBbK7sgHYA7M9GcLY=
 		</data>
 		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
 		<data>
@@ -27,7 +27,7 @@
 		</dict>
 		<key>Frameworks/DotProtocolBuffers.framework/DotProtocolBuffers</key>
 		<data>
-		TTga+KDUuiD5fKvPYpNZfy8Bq2k=
+		NyPt8lXSOT/rQTg/d1ECnzscs4s=
 		</data>
 		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
 		<data>
@@ -43,7 +43,7 @@
 		</data>
 		<key>Frameworks/SamFace.framework/SamFace</key>
 		<data>
-		dY8HhUHGz05qvvzdgT+StuqpFK4=
+		3PAKep243JmQT7dX4ZSAER6FxEI=
 		</data>
 		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>Headers/XYZHelloWorld-Swift.h</key>
 		<data>
-		qPOXyO7/w/YbU2rxRHDcQYWLWL0=
+		ucnsZCxJKCfbR71zlqdshN0/lTI=
 		</data>
 		<key>Headers/XYZHelloWorld.h</key>
 		<data>
@@ -63,23 +63,23 @@
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1t0+oFLPG34Hiz7Fgfz1axgbQcQ=
+		2FAia5bp0EsJ8I7bHF4WSCF6cKU=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		zz4FrF9zxm9md7A0ZA/qFHnrxF8=
+		DWogaGbHrn6W0EyrNdJLlAE81D4=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		fOYxgRMulaiMp9K09YXGzYv5aGQ=
+		gQ6WRK2Vdb8ksz5J0RF0by8KEs4=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zz4FrF9zxm9md7A0ZA/qFHnrxF8=
+		DWogaGbHrn6W0EyrNdJLlAE81D4=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		cW48j/qipGgpbujxPsndd684DWo=
+		6ITXwm7jWIU8BkVrTdWV6GvLSCE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+TA1mmBBPy/7Bzb/CGKyIkopbt9apJSzz1rLpmyjULg=
+			osBk41qXBBYTVlUl0U6GBBcEUNZKhF3y3V3tV3BPmhU=
 			</data>
 		</dict>
 		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oa+haC/z0p5IbXO39z1JH53JGgP59jQa5Nvmnc4RkAE=
+			H4KQHeOmKP8E2izhORXzgRMQ1sdaG0RlpzVDE0AW0C4=
 			</data>
 		</dict>
 		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oCMCoMw7703I3DI8BAaNTNxYXo8wq76fRFs2H6vYhS0=
+			v6ahhQV61dxKN1r/OMlhgW8aH9H05MzCbWUA+rS1dWE=
 			</data>
 		</dict>
 		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
@@ -164,7 +164,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NMpikmIsgwAmA8wNGKTA64YFC8q9DDUS3zfB0QR50Gc=
+			jBWcUCbaQ9MDAmDixTz0jYGvRkRNKXxkxN+DV96Od8Q=
 			</data>
 		</dict>
 		<key>Headers/XYZHelloWorld.h</key>
@@ -178,35 +178,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5UvizvTkYvqyJz/+Rzd7kmzPJo1D+4Y6yNqKE9HR0w0=
+			W3S4NZfjxzJAPDra8U646FzCth+U5RiM9ZwM7amex4k=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MgsUY1xDxkUVUaDVvKJ1BnrDzPPh2xw/I2jdyRmuy/I=
+			b9IOmwlWl2iaL4cGkWmFA8gUuO9hRaB8sjYlwKLJ6aQ=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BzZ1+1r8dQPAnEFjK6f6KxTl3Y70NwiZcCZqDBtTzuQ=
+			it4a2Xj/ygrgxvX5WRScNEWOttQb9GcmUpf+Ew/mvD0=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MgsUY1xDxkUVUaDVvKJ1BnrDzPPh2xw/I2jdyRmuy/I=
+			b9IOmwlWl2iaL4cGkWmFA8gUuO9hRaB8sjYlwKLJ6aQ=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7h2rTpC9YDcqA/jPjs+Vdu7QVKQY0Ue7DEYr1owijuw=
+			ldSPYojB4YkrGqlt3vWo37eDNAaiIsGIcVZc4+uCuT4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

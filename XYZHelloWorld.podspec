@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name               = "XYZHelloWorld"
   spec.swift_version      = "5.3"
-  spec.version            = "1.0.10"
+  spec.version            = "1.0.11"
   spec.summary            = "Example library"
   spec.description        = "..."
   spec.homepage           = "..."
@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   # spec.ios.deployment_target = '11.0'
   spec.ios.vendored_frameworks = "XYZHelloWorld.xcframework"
   spec.dependency 'Alamofire'
+  spec.dependency 'SwiftyRSA'
   
   # spec.name               = "XYZHelloWorld"
   # spec.version            = "1.0.2"

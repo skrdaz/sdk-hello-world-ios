@@ -19,6 +19,21 @@
 		8409DDB5299A18A200F4B3AF /* DotProtocolBuffers.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB3299A18A200F4B3AF /* DotProtocolBuffers.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8409DDB7299A18A800F4B3AF /* SamFace.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB6299A18A700F4B3AF /* SamFace.xcframework */; };
 		8409DDB8299A18A800F4B3AF /* SamFace.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8409DDB6299A18A700F4B3AF /* SamFace.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8409DDD0299A1EA100F4B3AF /* AutoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDBA299A1EA100F4B3AF /* AutoCaptureViewController.swift */; };
+		8409DDD1299A1EA100F4B3AF /* SDKExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDBC299A1EA100F4B3AF /* SDKExt.swift */; };
+		8409DDD2299A1EA100F4B3AF /* SDKConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDBD299A1EA100F4B3AF /* SDKConstant.swift */; };
+		8409DDD3299A1EA100F4B3AF /* SDKEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDBE299A1EA100F4B3AF /* SDKEncryptor.swift */; };
+		8409DDD4299A1EA100F4B3AF /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDBF299A1EA100F4B3AF /* DeviceUtils.swift */; };
+		8409DDD5299A1EA100F4B3AF /* SDKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDC1299A1EA100F4B3AF /* SDKService.swift */; };
+		8409DDD6299A1EA100F4B3AF /* CaptureOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDC4299A1EA100F4B3AF /* CaptureOption.swift */; };
+		8409DDD7299A1EA100F4B3AF /* VerifyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDC7299A1EA100F4B3AF /* VerifyResponse.swift */; };
+		8409DDD8299A1EA100F4B3AF /* GenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDC8299A1EA100F4B3AF /* GenResponse.swift */; };
+		8409DDD9299A1EA100F4B3AF /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDC9299A1EA100F4B3AF /* BaseResponse.swift */; };
+		8409DDDA299A1EA100F4B3AF /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDCA299A1EA100F4B3AF /* RegisterResponse.swift */; };
+		8409DDDB299A1EA100F4B3AF /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDCB299A1EA100F4B3AF /* AuthResponse.swift */; };
+		8409DDDC299A1EA100F4B3AF /* SDKRegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDCD299A1EA100F4B3AF /* SDKRegisterRequest.swift */; };
+		8409DDDD299A1EA100F4B3AF /* SDKAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDCE299A1EA100F4B3AF /* SDKAuthResponse.swift */; };
+		8409DDDE299A1EA100F4B3AF /* SDKVerifyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409DDCF299A1EA100F4B3AF /* SDKVerifyRequest.swift */; };
 		903C37014D585AC18D6B18BA /* Pods_XYZHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12577B9DEB6C31B5ABD5412 /* Pods_XYZHelloWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +76,21 @@
 		8409DDAF299A189E00F4B3AF /* DotFaceLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DotFaceLite.xcframework; path = "../../../../../../swift-lib/dot-face-lite/DotFaceLite/DotFaceLite.xcframework"; sourceTree = "<group>"; };
 		8409DDB3299A18A200F4B3AF /* DotProtocolBuffers.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DotProtocolBuffers.xcframework; path = "../../../../../../swift-lib/dot-protobuf/DotProtocolBuffers/DotProtocolBuffers.xcframework"; sourceTree = "<group>"; };
 		8409DDB6299A18A700F4B3AF /* SamFace.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SamFace.xcframework; path = "../../../../../../swift-lib/sam-face/SamFace/SamFace.xcframework"; sourceTree = "<group>"; };
+		8409DDBA299A1EA100F4B3AF /* AutoCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCaptureViewController.swift; sourceTree = "<group>"; };
+		8409DDBC299A1EA100F4B3AF /* SDKExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKExt.swift; sourceTree = "<group>"; };
+		8409DDBD299A1EA100F4B3AF /* SDKConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKConstant.swift; sourceTree = "<group>"; };
+		8409DDBE299A1EA100F4B3AF /* SDKEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKEncryptor.swift; sourceTree = "<group>"; };
+		8409DDBF299A1EA100F4B3AF /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
+		8409DDC1299A1EA100F4B3AF /* SDKService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKService.swift; sourceTree = "<group>"; };
+		8409DDC4299A1EA100F4B3AF /* CaptureOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureOption.swift; sourceTree = "<group>"; };
+		8409DDC7299A1EA100F4B3AF /* VerifyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyResponse.swift; sourceTree = "<group>"; };
+		8409DDC8299A1EA100F4B3AF /* GenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenResponse.swift; sourceTree = "<group>"; };
+		8409DDC9299A1EA100F4B3AF /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		8409DDCA299A1EA100F4B3AF /* RegisterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		8409DDCB299A1EA100F4B3AF /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		8409DDCD299A1EA100F4B3AF /* SDKRegisterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKRegisterRequest.swift; sourceTree = "<group>"; };
+		8409DDCE299A1EA100F4B3AF /* SDKAuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKAuthResponse.swift; sourceTree = "<group>"; };
+		8409DDCF299A1EA100F4B3AF /* SDKVerifyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKVerifyRequest.swift; sourceTree = "<group>"; };
 		C48CC58A719AB81E96BCAA34 /* Pods-XYZHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-XYZHelloWorld/Pods-XYZHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EEDA0B72C3EF141181F849 /* Pods-XYZHelloWorld-XYZHelloWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHelloWorld-XYZHelloWorldTests.release.xcconfig"; path = "Target Support Files/Pods-XYZHelloWorld-XYZHelloWorldTests/Pods-XYZHelloWorld-XYZHelloWorldTests.release.xcconfig"; sourceTree = "<group>"; };
 		E12577B9DEB6C31B5ABD5412 /* Pods_XYZHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +155,10 @@
 		8409DD85298FE0CE00F4B3AF /* XYZHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				8409DDB9299A1EA100F4B3AF /* controllers */,
+				8409DDC2299A1EA100F4B3AF /* models */,
+				8409DDC0299A1EA100F4B3AF /* services */,
+				8409DDBB299A1EA100F4B3AF /* utils */,
 				8409DD86298FE0CE00F4B3AF /* XYZHelloWorld.h */,
 				8409DD87298FE0CE00F4B3AF /* XYZHelloWorld.docc */,
 				8409DD9D298FE1C200F4B3AF /* SpeakUp.swift */,
@@ -138,6 +172,81 @@
 				8409DD92298FE0CF00F4B3AF /* XYZHelloWorldTests.swift */,
 			);
 			path = XYZHelloWorldTests;
+			sourceTree = "<group>";
+		};
+		8409DDB9299A1EA100F4B3AF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDBA299A1EA100F4B3AF /* AutoCaptureViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		8409DDBB299A1EA100F4B3AF /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDBC299A1EA100F4B3AF /* SDKExt.swift */,
+				8409DDBD299A1EA100F4B3AF /* SDKConstant.swift */,
+				8409DDBE299A1EA100F4B3AF /* SDKEncryptor.swift */,
+				8409DDBF299A1EA100F4B3AF /* DeviceUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		8409DDC0299A1EA100F4B3AF /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDC1299A1EA100F4B3AF /* SDKService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		8409DDC2299A1EA100F4B3AF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDC3299A1EA100F4B3AF /* sdk */,
+				8409DDC5299A1EA100F4B3AF /* api */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		8409DDC3299A1EA100F4B3AF /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDC4299A1EA100F4B3AF /* CaptureOption.swift */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		8409DDC5299A1EA100F4B3AF /* api */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDC6299A1EA100F4B3AF /* response */,
+				8409DDCC299A1EA100F4B3AF /* request */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		8409DDC6299A1EA100F4B3AF /* response */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDC7299A1EA100F4B3AF /* VerifyResponse.swift */,
+				8409DDC8299A1EA100F4B3AF /* GenResponse.swift */,
+				8409DDC9299A1EA100F4B3AF /* BaseResponse.swift */,
+				8409DDCA299A1EA100F4B3AF /* RegisterResponse.swift */,
+				8409DDCB299A1EA100F4B3AF /* AuthResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		8409DDCC299A1EA100F4B3AF /* request */ = {
+			isa = PBXGroup;
+			children = (
+				8409DDCD299A1EA100F4B3AF /* SDKRegisterRequest.swift */,
+				8409DDCE299A1EA100F4B3AF /* SDKAuthResponse.swift */,
+				8409DDCF299A1EA100F4B3AF /* SDKVerifyRequest.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		E267E1C976679BDDA3B343FF /* Pods */ = {
@@ -328,8 +437,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8409DDD6299A1EA100F4B3AF /* CaptureOption.swift in Sources */,
+				8409DDD0299A1EA100F4B3AF /* AutoCaptureViewController.swift in Sources */,
 				8409DD88298FE0CE00F4B3AF /* XYZHelloWorld.docc in Sources */,
+				8409DDDD299A1EA100F4B3AF /* SDKAuthResponse.swift in Sources */,
+				8409DDD9299A1EA100F4B3AF /* BaseResponse.swift in Sources */,
+				8409DDDB299A1EA100F4B3AF /* AuthResponse.swift in Sources */,
+				8409DDDC299A1EA100F4B3AF /* SDKRegisterRequest.swift in Sources */,
+				8409DDD7299A1EA100F4B3AF /* VerifyResponse.swift in Sources */,
+				8409DDD8299A1EA100F4B3AF /* GenResponse.swift in Sources */,
+				8409DDDE299A1EA100F4B3AF /* SDKVerifyRequest.swift in Sources */,
+				8409DDD2299A1EA100F4B3AF /* SDKConstant.swift in Sources */,
+				8409DDD1299A1EA100F4B3AF /* SDKExt.swift in Sources */,
+				8409DDD4299A1EA100F4B3AF /* DeviceUtils.swift in Sources */,
+				8409DDDA299A1EA100F4B3AF /* RegisterResponse.swift in Sources */,
 				8409DD9E298FE1C200F4B3AF /* SpeakUp.swift in Sources */,
+				8409DDD5299A1EA100F4B3AF /* SDKService.swift in Sources */,
+				8409DDD3299A1EA100F4B3AF /* SDKEncryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
