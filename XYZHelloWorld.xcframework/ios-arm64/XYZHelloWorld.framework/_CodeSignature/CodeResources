@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/DotFaceLite.framework/DotFaceLite</key>
 		<data>
-		F6mQ/DW/BgBBbK7sgHYA7M9GcLY=
+		UiY9H9DAhyqWoFLeFv868dn9uXc=
 		</data>
 		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
 		<data>
@@ -27,7 +27,7 @@
 		</dict>
 		<key>Frameworks/DotProtocolBuffers.framework/DotProtocolBuffers</key>
 		<data>
-		NyPt8lXSOT/rQTg/d1ECnzscs4s=
+		afScWwoisz4gqerWjUsnOGIRj/0=
 		</data>
 		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
 		<data>
@@ -43,7 +43,7 @@
 		</data>
 		<key>Frameworks/SamFace.framework/SamFace</key>
 		<data>
-		3PAKep243JmQT7dX4ZSAER6FxEI=
+		us7MjKFE6zlZd09uKB60kiZM7Rk=
 		</data>
 		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>Headers/XYZHelloWorld-Swift.h</key>
 		<data>
-		ucnsZCxJKCfbR71zlqdshN0/lTI=
+		Cz16FQatH1NNb28mwjdSe21SXhs=
 		</data>
 		<key>Headers/XYZHelloWorld.h</key>
 		<data>
@@ -59,27 +59,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4v8KtpIG3asi0vocW9+YYDW1mWs=
+		5K5FHsg7N7bJ8hcbba6eBl6E5PE=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2FAia5bp0EsJ8I7bHF4WSCF6cKU=
+		61cL91ooHAyFnGssfjwQ8JXXye4=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		DWogaGbHrn6W0EyrNdJLlAE81D4=
+		W6RRySJYUFYf0WEh8O6hEqdeCiA=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gQ6WRK2Vdb8ksz5J0RF0by8KEs4=
+		SaFrbbtwYUtRHU2JOO4VT0NBT4I=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		DWogaGbHrn6W0EyrNdJLlAE81D4=
+		W6RRySJYUFYf0WEh8O6hEqdeCiA=
 		</data>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6ITXwm7jWIU8BkVrTdWV6GvLSCE=
+		hNqjlFwaNetComXQt0pltEGdt8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			osBk41qXBBYTVlUl0U6GBBcEUNZKhF3y3V3tV3BPmhU=
+			C+1vL0w3uBPhpvAzA7bdO1UcZFvwnGLCtMaLcyuOEno=
 			</data>
 		</dict>
 		<key>Frameworks/DotFaceLite.framework/Info.plist</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H4KQHeOmKP8E2izhORXzgRMQ1sdaG0RlpzVDE0AW0C4=
+			Jas3n+4Yp+Copem2njI8YANmjIamuq/gLFtsjuguyKc=
 			</data>
 		</dict>
 		<key>Frameworks/DotProtocolBuffers.framework/Info.plist</key>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v6ahhQV61dxKN1r/OMlhgW8aH9H05MzCbWUA+rS1dWE=
+			Kbfja182jknGvno/mexZ/fxOIS7D/O/wJ1FxrPsIaUc=
 			</data>
 		</dict>
 		<key>Frameworks/SamFace.framework/_CodeSignature/CodeResources</key>
@@ -164,7 +164,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jBWcUCbaQ9MDAmDixTz0jYGvRkRNKXxkxN+DV96Od8Q=
+			/h+CRC1s2RDnin6Qq/yWWIwR8Qu0yndja/scEKT8ziU=
 			</data>
 		</dict>
 		<key>Headers/XYZHelloWorld.h</key>
@@ -178,35 +178,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W3S4NZfjxzJAPDra8U646FzCth+U5RiM9ZwM7amex4k=
+			JZcyfkYOMnXvG9MPi+BgPHi5ahusSUY9RbphPSh7+Yc=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b9IOmwlWl2iaL4cGkWmFA8gUuO9hRaB8sjYlwKLJ6aQ=
+			C/YrFKM+NnqpbsUkWvkQtSLHJyJBowK0u9DFlntVFYA=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			it4a2Xj/ygrgxvX5WRScNEWOttQb9GcmUpf+Ew/mvD0=
+			7hrQIzXW4Cwb00p+GQljrZfWuu5RoFKIpNKqjfGnagQ=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b9IOmwlWl2iaL4cGkWmFA8gUuO9hRaB8sjYlwKLJ6aQ=
+			C/YrFKM+NnqpbsUkWvkQtSLHJyJBowK0u9DFlntVFYA=
 			</data>
 		</dict>
 		<key>Modules/XYZHelloWorld.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ldSPYojB4YkrGqlt3vWo37eDNAaiIsGIcVZc4+uCuT4=
+			vJYAKMkOVFcDP2RwyL6WcnxuZP/a+xymVtJBASx5m2Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

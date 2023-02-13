@@ -32,6 +32,580 @@
         "moduleName": "XYZHelloWorld"
       },
       {
+        "kind": "TypeDecl",
+        "name": "AutoCaptureViewController",
+        "printedName": "AutoCaptureViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reqId",
+            "printedName": "reqId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvp",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvp",
+            "moduleName": "XYZHelloWorld",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvg",
+                "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvg",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvs",
+                "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvs",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvM",
+                "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC5reqIdSSSgvM",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "XYZHelloWorld.AutoCaptureViewControllerDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoCaptureViewControllerDelegate",
+                    "printedName": "XYZHelloWorld.AutoCaptureViewControllerDelegate",
+                    "usr": "s:13XYZHelloWorld33AutoCaptureViewControllerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvp",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvp",
+            "moduleName": "XYZHelloWorld",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "XYZHelloWorld.AutoCaptureViewControllerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AutoCaptureViewControllerDelegate",
+                        "printedName": "XYZHelloWorld.AutoCaptureViewControllerDelegate",
+                        "usr": "s:13XYZHelloWorld33AutoCaptureViewControllerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvg",
+                "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvg",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "XYZHelloWorld.AutoCaptureViewControllerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AutoCaptureViewControllerDelegate",
+                        "printedName": "XYZHelloWorld.AutoCaptureViewControllerDelegate",
+                        "usr": "s:13XYZHelloWorld33AutoCaptureViewControllerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvs",
+                "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvs",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvM",
+                "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC8delegateAA0cdeF8Delegate_pSgvM",
+                "moduleName": "XYZHelloWorld",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController(im)viewDidLoad",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC11viewDidLoadyyF",
+            "moduleName": "XYZHelloWorld",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController(im)viewWillAppear:",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC14viewWillAppearyySbF",
+            "moduleName": "XYZHelloWorld",
+            "overriding": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "faceAutoCaptureViewController",
+            "printedName": "faceAutoCaptureViewController(_:captured:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FaceAutoCaptureViewController",
+                "printedName": "DotFaceLite.FaceAutoCaptureViewController",
+                "usr": "c:@M@DotFaceLite@objc(cs)DOTFLFaceAutoCaptureViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FaceAutoCaptureResult",
+                "printedName": "DotFaceLite.FaceAutoCaptureResult",
+                "usr": "c:@M@DotFaceLite@objc(cs)DOTFLFaceAutoCaptureResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController(im)faceLiteAutoCaptureViewController:captured:",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC04facecdeF0_8capturedy11DotFaceLite0jcdeF0C_AF0jcD6ResultCtF",
+            "moduleName": "XYZHelloWorld",
+            "objc_name": "faceLiteAutoCaptureViewController:captured:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AutoCaptureViewController",
+                "printedName": "XYZHelloWorld.AutoCaptureViewController",
+                "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "XYZHelloWorld",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "XYZHelloWorld.AutoCaptureViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoCaptureViewController",
+                    "printedName": "XYZHelloWorld.AutoCaptureViewController",
+                    "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController(im)initWithCoder:",
+            "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "XYZHelloWorld",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@XYZHelloWorld@objc(cs)AutoCaptureViewController",
+        "mangledName": "$s13XYZHelloWorld25AutoCaptureViewControllerC",
+        "moduleName": "XYZHelloWorld",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FaceAutoCaptureViewControllerDelegate",
+            "printedName": "FaceAutoCaptureViewControllerDelegate",
+            "usr": "c:@M@DotFaceLite@objc(pl)DOTFLFaceAutoCaptureViewControllerDelegate",
+            "mangledName": "$s11DotFaceLite0B33AutoCaptureViewControllerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AutoCaptureViewControllerDelegate",
+        "printedName": "AutoCaptureViewControllerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onCaptureFinish",
+            "printedName": "onCaptureFinish(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13XYZHelloWorld33AutoCaptureViewControllerDelegateP02onD6Finish6resultySbSg_tF",
+            "mangledName": "$s13XYZHelloWorld33AutoCaptureViewControllerDelegateP02onD6Finish6resultySbSg_tF",
+            "moduleName": "XYZHelloWorld",
+            "genericSig": "<τ_0_0 where τ_0_0 : XYZHelloWorld.AutoCaptureViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : XYZHelloWorld.AutoCaptureViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCaptureError",
+            "printedName": "onCaptureError(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13XYZHelloWorld33AutoCaptureViewControllerDelegateP02onD5ErroryySi_SStF",
+            "mangledName": "$s13XYZHelloWorld33AutoCaptureViewControllerDelegateP02onD5ErroryySi_SStF",
+            "moduleName": "XYZHelloWorld",
+            "genericSig": "<τ_0_0 where τ_0_0 : XYZHelloWorld.AutoCaptureViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : XYZHelloWorld.AutoCaptureViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13XYZHelloWorld33AutoCaptureViewControllerDelegateP",
+        "mangledName": "$s13XYZHelloWorld33AutoCaptureViewControllerDelegateP",
+        "moduleName": "XYZHelloWorld",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",

@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name               = "XYZHelloWorld"
   spec.swift_version      = "5.3"
-  spec.version            = "1.0.11"
+  spec.version            = "1.0.12"
   spec.summary            = "Example library"
   spec.description        = "..."
   spec.homepage           = "..."

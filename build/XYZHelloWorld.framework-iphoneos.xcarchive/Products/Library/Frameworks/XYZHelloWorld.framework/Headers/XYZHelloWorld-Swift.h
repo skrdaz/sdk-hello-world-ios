@@ -230,6 +230,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import DotFaceLite;
+@import UIKit;
 #endif
 
 #endif
@@ -250,6 +252,21 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class DOTFLFaceAutoCaptureViewController;
+@class DOTFLFaceAutoCaptureResult;
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC13XYZHelloWorld25AutoCaptureViewController")
+@interface AutoCaptureViewController : UIViewController <DOTFLFaceAutoCaptureViewControllerDelegate>
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)faceLiteAutoCaptureViewController:(DOTFLFaceAutoCaptureViewController * _Nonnull)viewController captured:(DOTFLFaceAutoCaptureResult * _Nonnull)result;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 #endif

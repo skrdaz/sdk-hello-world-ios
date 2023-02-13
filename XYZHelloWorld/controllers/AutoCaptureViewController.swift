@@ -7,22 +7,22 @@
 import UIKit
 import DotFaceLite
 
-class AutoCaptureViewController: UIViewController, FaceServiceListener, FaceAutoCaptureViewControllerDelegate {
+public class AutoCaptureViewController: UIViewController, FaceServiceListener, FaceAutoCaptureViewControllerDelegate {
 
     private let service = SDKService()
     
-    var reqId: String?
+    public var reqId: String?
     
-    var delegate: AutoCaptureViewControllerDelegate?
+    public var delegate: AutoCaptureViewControllerDelegate?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         service.delegate = self
         
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         if let reqId = reqId {
             service.setup(reqId: reqId, timeout: 20)
         }
@@ -89,7 +89,7 @@ class AutoCaptureViewController: UIViewController, FaceServiceListener, FaceAuto
         viewController.start()
     }
     
-    func faceAutoCaptureViewController(_ viewController: DotFaceLite.FaceAutoCaptureViewController, captured result: DotFaceLite.FaceAutoCaptureResult) {
+    public func faceAutoCaptureViewController(_ viewController: DotFaceLite.FaceAutoCaptureViewController, captured result: DotFaceLite.FaceAutoCaptureResult) {
         if let viewWithTag = self.view.viewWithTag(100) {
             viewWithTag.removeFromSuperview()
             setupResult(CGImageFactory.create(bgraRawImage: result.bgraRawImage))
@@ -186,7 +186,7 @@ class AutoCaptureViewController: UIViewController, FaceServiceListener, FaceAuto
     
 }
 
-protocol AutoCaptureViewControllerDelegate {
+public protocol AutoCaptureViewControllerDelegate {
     
     func onCaptureFinish(result: Bool?)
     
